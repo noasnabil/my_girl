@@ -1,0 +1,52 @@
+.Photos {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;  /* Reduced from 5px for smaller gaps between photos */
+    margin-bottom: 2px;  /* Reduced from 5px for smaller vertical gap between rows */
+}
+
+.photo-container {
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.photo {
+    transform: translateY(60%);
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+    z-index: 1;
+    transform: translateY(60%);  /* Move frame slightly down */
+}
+
+.photo-container:hover .photo {
+    transform: scale(1.05);
+}
+
+.photo-container:hover .frame {
+    transform: scale(1.05);
+}

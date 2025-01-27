@@ -1,0 +1,80 @@
+/* Ensure the body and root have full height */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Styling for the second-page */
+.second-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/background.jpeg'); /* Path to your background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* Ensure the background stays in place */
+}
+
+/* Icon container styling */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styling for each icon and text */
+.icon-item {
+  text-align: center; /* Centers the icon and text */
+}
+
+/* Icon styling */
+.icon {
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect on icons */
+.icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Text under icons */
+.icon-text {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 16px;
+  color: white;
+  margin-top: 10px; /* Adds some space between the icon and text */
+  text-shadow: 1px 1px 2px black; /* Pixelated effect */
+}
+
+/* Optional: Add a test font class for general page text */
+.test-font {
+  font-family: 'Press Start 2P';
+  font-size: 16px;
+  color: white; /* Since your background is dark */
+  margin-bottom: 20px; /* Add some space above the icon */
+}
+
+.text-5 {
+  position: relative;
+  top: -50px; /* Move just Text 5 upwards */
+}
+
+.icon5 {
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  transform: translateY(-10%);
+}
+
+/* Hover effect for icon5 */
+.icon5:hover {
+  transform: translateY(-10%) scale(1.1); /* Slight zoom effect on hover */
+}

@@ -1,0 +1,88 @@
+
+
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the font for the entire application */
+  body {
+    font-family: 'Courier New', Courier, monospace;  /* Pixelated font */
+    background-color: #121212;  /* Dark background for contrast */
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Make sure that the body takes up the entire viewport */
+  html, body {
+    height: 100%;
+  }
+  
+  /* For the password input area (optional) */
+  input[type="password"] {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  /* Style for the button (e.g., submit or check password) */
+  button {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Add a hover effect for the button */
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Style for any text or headings */
+  h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* Additional body-wide styles */
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Center elements vertically and horizontally */
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Ensure that images are responsive and fit within their container */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  

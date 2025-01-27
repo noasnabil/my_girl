@@ -1,0 +1,18 @@
+/* src/App.css */
+
+/* Set default font to the pixel font */
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Press Start 2P', sans-serif; /* Apply pixel font to all text */
+}
+
+/* Optional: Add a transition effect to all elements */
+* {
+  transition: all 0.3s ease-in-out;
+}

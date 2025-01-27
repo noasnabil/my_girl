@@ -1,0 +1,67 @@
+/* FourthPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Apply background image to the whole page */
+.birthday-letter-container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding: 50px;
+  background-image: url('../assets/background.jpeg'); /* Path to your second page's background image */
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Center the photo in the middle */
+.center-photo {
+  width: 1200px; /* Adjust the size of the photo */
+  height: 1200px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the photo */
+  z-index: 1; /* Ensure it's on top */
+}
+
+.photo {
+  width: 700px; /* Adjust the size of the photo */
+  height: 700px; /* Adjust the size of the photo */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  border-radius: 15px; /* Optional: adds rounded corners */
+}
+
+/* Existing pink hearts on the right side */
+.pink-heart-container1 {
+  position: relative;
+  left: 0px;
+  top: -270px;
+  cursor: pointer;
+}
+
+.pink-heart1 {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.pixel-text {
+    font-family: 'Press Start 2P', cursive; /* Use pixel font */
+    font-size: 10px; /* Size of the text */
+    color: rgb(0, 0, 0); /* Text color */
+    position: absolute; /* Allows you to place it anywhere */
+    top: 24%; /* Adjust position from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    z-index: 2; /* Make sure it's above other elements */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better visibility */
+}
+
+
+
